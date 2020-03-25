@@ -14,4 +14,4 @@ jobs:
         ftp-server: sftp://ssh.atomicsites.net/htdocs/
         ftp-username: u76c3993eb6eb646de14c02df4be2667f
         ftp-password: ${{ secrets.FTP_PASSWORD }}
-        git-ftp-args: --insecure
+        # git-ftp-args: --insecure
