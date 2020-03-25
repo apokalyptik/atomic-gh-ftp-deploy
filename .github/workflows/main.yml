@@ -1,0 +1,16 @@
+on: push
+name: Publish Website
+jobs:
+  FTP-Deploy-Action:
+    name: FTP-Deploy-Action
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+      with:
+        fetch-depth: 2
+    - name: FTP-Deploy-Action
+      uses: SamKirkland/FTP-Deploy-Action@3.0.0
+      with:
+        ftp-server: sftp://ssh.atomicsites.net/
+        ftp-username: u76c3993eb6eb646de14c02df4be2667f
+        ftp-password: ${{ secrets.FTP_PASSWORD }}
