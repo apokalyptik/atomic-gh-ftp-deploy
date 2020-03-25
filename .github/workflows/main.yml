@@ -9,7 +9,7 @@ jobs:
       with:
         fetch-depth: 2
     - name: FTP-Deploy-Action
-      uses: SamKirkland/FTP-Deploy-Action@3.0.0
+      uses: apokalyptik/FTP-Deploy-Action@3.0.0
       with:
         ftp-server: sftp://ssh.atomicsites.net/htdocs/
         ftp-username: u76c3993eb6eb646de14c02df4be2667f
