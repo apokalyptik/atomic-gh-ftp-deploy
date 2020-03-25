@@ -11,6 +11,7 @@ jobs:
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@3.0.0
       with:
-        ftp-server: sftp://ssh.atomicsites.net/
+        ftp-server: sftp://ssh.atomicsites.net/htdocs/
         ftp-username: u76c3993eb6eb646de14c02df4be2667f
         ftp-password: ${{ secrets.FTP_PASSWORD }}
+        git-ftp-args: --insecure
