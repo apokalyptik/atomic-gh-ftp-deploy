@@ -1,4 +1,4 @@
 <?php
 
-echo 'Hello <b>' . htmlentities( $_SERVER['REMOTE_ADDR'] ) . '</b> the current time is: ' . microtime( true );
+echo 'Hello <b>' . htmlentities( $_SERVER['X_FORWARDED_FOR'] ) . '</b> the current time is: ' . microtime( true );
 
