@@ -10,7 +10,7 @@ jobs:
       with:
         fetch-depth: 2
     - name: Git Status Check
-      run: git status -uno --porcelain
+      run: pwd && ls -lah && git status -uno --porcelain
     - name: FTP-Deploy-Action
       uses: Automattic/FTP-Deploy-Action@attempt-merge-upstream-3.1.2
       with:
