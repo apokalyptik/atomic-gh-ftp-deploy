@@ -1,6 +1,6 @@
 <?php
 
-chdir( gevent( 'DOCUMENT_ROOT' ) );
+chdir( getenv( 'DOCUMENT_ROOT' ) );
 
 echo sprintf(
 	"%s Deployed on<br/>%s<br/>%d seconds ago",
