@@ -9,7 +9,7 @@ jobs:
       with:
         fetch-depth: 2
     - name: FTP-Deploy-Action
-      uses: Automattic/FTP-Deploy-Action@3.0.1
+      uses: Automattic/FTP-Deploy-Action@attempt-merge-upstream-3.1.2
       with:
         ftp-server: sftp://ssh.atomicsites.net/htdocs/
         ftp-username: ${{ secrets.FTP_USER }}
