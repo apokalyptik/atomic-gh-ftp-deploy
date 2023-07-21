@@ -1,3 +1,4 @@
 .git-ftp-ignore
-.github
+.github/
+.github/*
 README.md
